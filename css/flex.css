@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css rest end*/
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto; 
+}
+
+.header {
+    padding: 0px 42px 0px 42px;
+}
+
+.main {
+    padding: 0px 42px 0px 42px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.bar {
+    width: 940px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.topmenu {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 621px;
+}
+
+.topmenu li a {
+    display: block;
+    color: #3F5D45;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.topmenu li a:hover {
+    background: #3F5D45;
+    color: white
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sidemenu li {
+    width: 300px;
+    height: 65px;
+    background: #ffff;
+    text-align:center;
+    line-height: 65px;   
+    font-size: 24px;
+}
+
+.sidemenu .category {
+    background: #3F5D45;
+}
+
+.sidemenu .category a {
+    color: #EAF0ED;
+}
+
+.sidemenu .item:hover {
+    background: #EAF0ED;
+}
+
+.sidemenu li a {
+    display: block;
+    color: #3F5D45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.productItem {
+    margin:0px 0px 20px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.todayFeatured {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    letter-spacing: 6px;
+    width: 36px;
+    height: 106.73px;
+}
+
+
+.favorite {
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+
+.productInform {
+    height: 56px;
+    font-size: 20px;
+    color: #3F5D45;
+    line-height: 56px;
+    position: relative;
+}
+
+.productName {
+    position: absolute;
+    left: 33px;
+}
+
+.price {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+
+.addToCart {
+    height: 65px;
+    width: 300px;
+    background: #EAF0ED;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3F5D45;
+    border: none;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.page {
+    display: flex;
+    margin-left: 340px;
+}
+
+.page li {
+    width: 60px;
+    height: 60px;
+    background: #EAF0ED;
+    line-height: 60px;
+}
+
+.page li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #3F5D45;
+    font-size: 20px;
+}
+
+.pageNum a:hover {
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.changePage img {
+    padding: 18px
+}
+
+.footer {
+    margin-top: 60px;
+}
+.mail {
+    display: flex;
+    height: 116px;
+    background: #3F5D45;
+    line-height: 116px;
+}
+
+.logoLight {
+    width: 40px;
+    height: 40px;
+    padding: 38px 0px 38px 122px;
+}
+
+.mail p {
+    color: #EAF0ED;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.mail form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 380px;
+    margin-left: 124px;
+}
+
+.mailPic {
+    width: 44px;
+    height: 56px;
+    background: #EAF0ED;
+    background-image: url(../img/mail-24px.png);
+    background-repeat: no-repeat;
+    background-position: right 0px center
+}
+
+.mailTxt {
+    width: 272px;
+    height: 56px;
+    border: none;
+    padding: 0 0 0 10px;
+    background: #EAF0ED;
+    font-size: 24px;
+}
+
+.send {
+    width: 64px;
+    height: 56px;
+    border: none;
+    background: #FFE180;
+    background-image: url(../img/arrow_forward-24px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    background: #EAF0ED;
+}
+
+.left {
+    padding: 39px 0px 0px 122px;
+    margin-right: 325px;
+}
+
+.logoSmall {
+    width: 171.22px;
+    height: 26.6px;
+    margin-bottom: 115.5px;
+}
+
+.contactInf {
+    font-size: 16px;
+    color:#3F5D45;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.icon {
+    margin-top: 30px;
+    display: flex;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+}
+
+.slogan {
+    margin-left: 199px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    writing-mode: vertical-rl;
+    color: #3F5D45;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+}
+
+.copyright {
+    font-size: 16px;
+    color: #3F5D45;
+}
+
